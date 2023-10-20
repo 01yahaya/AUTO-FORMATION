@@ -1,0 +1,15 @@
+ng g c sideBar --dry-run
+ng g c header
+ng g m auto-formation/autoformation --module=app --routing=true --dry-run
+ng g m auto-formation/gestion-departement --module=auto-formation/autoformation --routing=true --dry-run
+ng g m auto-formation/gestion-agent --module=auto-formation/autoformation --routing=true --dry-run
+
+ng g c auto-formation/gestion-departement/liste-departement --dry-run
+ng g c auto-formation/gestion-departement/ajouter-departement --dry-run
+ng g c auto-formation/gestion-departement/delete-departement --dry-run
+ng g c auto-formation/gestion-departement/update-departement --dry-run
+
+ng g c auto-formation/gestion-agent/liste-agent --dry-run
+ng g c auto-formation/gestion-agent/ajouter-agent --dry-run
+ng g c auto-formation/gestion-agent/delete-agent --dry-run
+ng g c auto-formation/gestion-agent/update-agent --dry-run
